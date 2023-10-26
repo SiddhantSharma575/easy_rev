@@ -1,10 +1,12 @@
 import React from 'react'
 import styles from "./home.module.css"
 import { COLORS } from '../../themes/colors'
+import { Card } from '../../constants/data'
+import CardHeader from '../../components/CardHeader'
 
 const Home = () => {
   return (
-    <>
+    <div>
       <div className={styles.box} ></div>
       <div className={styles.box1} ></div>
       <div className={styles.box2} ></div>
@@ -18,7 +20,17 @@ const Home = () => {
           </p>
         </div>
       </div>
-    </>
+      <div className={styles.cardFeedContainer}>
+          <h1>Why Easy Rev ?</h1>
+          <div className={styles.cardFeedInnerContainer}>
+            {
+              Card.map((card) => (
+                <CardHeader card={card} />
+              ))
+            }
+          </div>
+      </div>
+    </div>
   )
 }
 

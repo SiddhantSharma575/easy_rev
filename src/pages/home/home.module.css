@@ -126,3 +126,27 @@
         opacity: 1;
     }
 }
+
+.cardFeedContainer {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.cardFeedContainer > h1 {
+    margin-top: 2.5rem;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.cardFeedInnerContainer {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+     column-gap: 1rem;
+    row-gap: 1rem;
+    /* display: flex;
+    flex-wrap: wrap; */
+}
