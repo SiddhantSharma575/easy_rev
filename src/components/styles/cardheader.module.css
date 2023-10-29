@@ -1,6 +1,24 @@
 .cardHeaderContainer {
-    background-color: red;
-    height: 200px;
-    width: 200px;
-    /* position: relative; */
+  /* background-color: pink; */
+  height: 200px;
+  width: 200px;
+  /* position: relative; */
+}
+
+.cardHeaderContainer h3 {
+  margin: 0.5em auto;
+}
+
+.cardId {
+  display: flex;
+  align-items: baseline;
+  gap: 1em;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 25px solid #ffc72c;
 }

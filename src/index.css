@@ -2,7 +2,22 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Quicksand', sans-serif;
-  background-color: #fff;
+  font-family: "Quicksand", sans-serif;
+  /* background-color: #fff; */
   overflow-x: hidden;
+}
+
+body {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 0);
+  background-size: 20px 20px;
+  ::-moz-selection,
+  ::selection {
+    color: #0e3846;
+    background-color: #ffc72c;
+  }
+}
+
+p {
+  line-height: 1.5;
+  color: #0e3846;
 }
