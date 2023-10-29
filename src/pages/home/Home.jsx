@@ -80,7 +80,7 @@ const Home = () => {
         <div className={styles.reviews}>
           <h1>Our Generated Review Samples</h1>
           {
-            reviewLeftIndex > 0 && (
+            reviewLeftIndex > 0 && window.innerWidth > 568 && (
               <HiOutlineChevronLeft size={22} className={styles.leftIcon} onClick={handleReviewLeftChevron} />
             )
           }
@@ -90,7 +90,7 @@ const Home = () => {
             ))}
           </div>
           {
-            Review.length > reviewRightIndex && (
+            Review.length > reviewRightIndex && window.innerWidth > 568 && (
               <HiOutlineChevronRight size={22} className={styles.rightIcon} onClick={handleReviewRightChevron} />
             )
           }

@@ -1,6 +1,7 @@
 .headertitle {
   color: red;
 }
+
 .topFeedContainer {
   min-width: 100vw;
   min-height: 100vh;
@@ -19,18 +20,19 @@
   width: 40%;
 }
 
-.topInnerContainer > h3 {
+.topInnerContainer>h3 {
   margin-bottom: 1.5rem;
   font-weight: bold;
   font-size: 3rem;
   animation: drop 0.6s linear forwards;
 }
 
-.topInnerContainer > p {
+.topInnerContainer>p {
   font-weight: 600;
   font-size: 1.25rem;
   animation: drop 0.6s linear forwards;
 }
+
 .box {
   width: 200px;
   height: 200px;
@@ -91,15 +93,21 @@
 }
 
 @keyframes moveBox {
+
   0%,
   100% {
-    transform: translateX(0); /* Start and end position */
+    transform: translateX(0);
+    /* Start and end position */
   }
+
   25% {
-    transform: translateX(50px); /* Move 50px to the right */
+    transform: translateX(50px);
+    /* Move 50px to the right */
   }
+
   75% {
-    transform: translateX(-50px); /* Move 50px to the left */
+    transform: translateX(-50px);
+    /* Move 50px to the left */
   }
 }
 
@@ -108,18 +116,22 @@
     transform: translateY(-200px);
     opacity: 0;
   }
+
   50% {
     transform: translateY(0px);
     opacity: 1;
   }
+
   65% {
     transform: translateY(-17px);
     opacity: 1;
   }
+
   75% {
     transform: translateY(-22px);
     opacity: 1;
   }
+
   100% {
     transform: translateY(0px);
     opacity: 1;
@@ -133,8 +145,10 @@
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
+  animation: drop 0.6s linear forwards;
 }
-.cardFeedContainer > h1 {
+
+.cardFeedContainer>h1 {
   margin-top: 2.5rem;
   font-weight: bold;
   font-size: 32px;
@@ -150,6 +164,20 @@
     flex-wrap: wrap; */
 }
 
+@media (max-width: 768px) {
+  .cardFeedInnerContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Media query for screens smaller than another specific width */
+@media (max-width: 576px) {
+  .cardFeedInnerContainer {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 .setup,
 .reviews {
   min-height: 100vh;
@@ -158,8 +186,7 @@
 }
 
 .setup h1,
-.reviews h1
-.productCardContainer h1 {
+.reviews h1 .productCardContainer h1 {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 1em;
@@ -170,12 +197,14 @@
   font-size: 1.25rem;
   margin-bottom: 3em;
   text-align: center;
+
 }
 
 .reviewsContainer {
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  animation: drop 0.6s linear forwards;
 }
 
 .rightIcon {
@@ -206,19 +235,18 @@
   margin-bottom: 1em;
   user-select: none;
 }
+
 .productHeadingContainer {
   display: flex;
   justify-content: space-around;
-  margin-top: 1rem; 
+  margin-top: 1rem;
 }
+
 /* .productContainer {
   display: flex;
   align-items: center;
 } */
 
-.productHeadingContainer > p {
-  
-}
 
 .productCardHover {
   transition: 0.5s ease-in-out;
